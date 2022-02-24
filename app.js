@@ -44,12 +44,12 @@ function showNotes() {
     html += `
             <div class="noteCard my-2 mx-2 card" style="width: 18rem; onload="Timestamp()" ">
                     <div class="card-body">
-                        <h5 class="card-title"><b>Title: </b>${element.title}</h5>
-                        <p class="card-text"><b>Note:</b> ${element.text}</p>
+                        <h5 class="card-title">Title: ${element.title}</h5>
+                        <p class="card-text">Note: ${element.text}</p>
                         <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
                         <hr>
-                        <p class="card-text"><b>Date:</b> ${element.date}</p>
-                        <p class="card-text"><b>Time:</b> ${element.time}</p>
+                        <p class="card-text">Date: ${element.date}</p>
+                        <p class="card-text">Time: ${element.time}</p>
                     </div>
                 </div>`;
   });
